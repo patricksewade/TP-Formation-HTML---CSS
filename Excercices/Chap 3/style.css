@@ -32,6 +32,7 @@ div #id {
   position: relative;
 }
 
+
 a[title="Mon titre"] {
   position: absolute;
 }
@@ -66,4 +67,46 @@ div {
   min-height: 20px;
   min-width: 50px;
   width: 100px;
+}
+
+div {
+  text-align: center;
+  display: block;
+  display: inline-block;
+  display: inline;
+}
+
+img {
+  float: left;
+}
+
+.section-suivante {
+  clear: both;
+}
+
+div {
+  position: static;
+  position: relative;
+  position: absolute;
+  position: fixed;
+  position: sticky;
+}
+
+/* Pseudo-classes */
+
+div:hover {
+  color: red;
+
+}
+
+span:not(div) {
+  position: relative;
+}
+
+/* Exemple pratique d'application */
+input:required:invalid {
+  border: 2px solid red;
+  /* Bordure rouge si un champ requis est mal rempli*/
+  z-index: 5;
+  overflow: auto;
 }
