@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* Extrait des styles du Header */
+.header {
+  background: black;
+  overflow: auto;
+  /* Force l'englobement des éléments flottants */
+  line-height: 1.7em;
+}
+
+.header nav h1 {
+  float: left;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.header nav ul {
+  float: right;
+  list-style: none;
+}
+
+.header nav ul li {
+  float: left;
+}
+
+.header nav ul li a {
+  color: white;
+  padding: 20px;
+  display: block;
+  /* Élargit la boîte cliquable */
+}
+
+.header nav ul li a:hover,
+.active {
+  background: #444;
+}
+
+.vp {
+  height: 700px;
+  background: url("https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg") center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.separator {
+  margin: 20px auto;
+  height: 10px;
+  width: 100px;
+  background: #111;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: white;
+  color: #222;
+}
+
+.btn-primary:hover {
+  background: #222;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.features {
+  overflow: auto;
+  /* Empêche l'effondrement de la hauteur du parent */
+  padding: 100px 0;
+  text-align: center;
+}
+
+.feature {
+  float: left;
+  width: 50%;
+  /* Occupe la moitié de la largeur du conteneur parent */
+}
+
+.btn-dark {
+  background: #222;
+  color: white;
+}
+
+.btn-dark:hover {
+  background: white;
+  color: #222;
+  border: 1px solid #222;
+  /* Ajout d'une bordure pour compenser le fond blanc */
+}
+
+/* Règle globale définie précédemment */
+p {
+  margin-bottom: 10px;
+}
+
+/* Règle spécifique */
+footer p {
+  margin-bottom: 0px;
+}
